@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowplit - 스마트한 여행 플래너</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 500px;
+        }
+        .logo {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .feature-icon {
+            font-size: 32px;
+        }
+        .feature-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        .app-store-btn {
+            display: inline-block;
+            background: white;
+            color: #333;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app-store-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .coming-soon {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">✈️</div>
+        <h1>Flowplit</h1>
+        <p class="tagline">스마트한 여행 플래너</p>
+
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">📅</span>
+                <span class="feature-text">일정 관리</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">💰</span>
+                <span class="feature-text">더치페이</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎒</span>
+                <span class="feature-text">준비물 체크</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">☁️</span>
+                <span class="feature-text">iCloud 동기화</span>
+            </div>
+        </div>
+
+        <a href="https://apps.apple.com/app/flowplit/id6740486566" class="app-store-btn">
+            App Store에서 다운로드
+        </a>
+        <p class="coming-soon">Android 버전 준비 중</p>
+    </div>
+</body>
+</html>
