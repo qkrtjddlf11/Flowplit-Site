@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowplit - 스마트한 여행 플래너</title>
+    <meta name="description" content="일정 관리, 더치페이 정산, 준비물 체크리스트까지. Flowplit으로 여행의 모든 것을 한곳에서 관리하세요.">
+    <meta name="theme-color" content="#667eea">
+    <link rel="canonical" href="https://flowplit.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flowplit - 스마트한 여행 플래너">
+    <meta property="og:description" content="일정 관리, 더치페이 정산, 준비물 체크리스트까지. 여행의 모든 것을 한곳에서.">
+    <meta property="og:url" content="https://flowplit.app/">
+    <meta property="og:site_name" content="Flowplit">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Flowplit - 스마트한 여행 플래너">
+    <meta name="twitter:description" content="일정 관리, 더치페이 정산, 준비물 체크리스트까지. 여행의 모든 것을 한곳에서.">
+
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6740486566">
+
     <style>
         * {
             margin: 0;
@@ -72,6 +92,10 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
+        .app-store-btn:focus-visible {
+            outline: 3px solid white;
+            outline-offset: 3px;
+        }
         .coming-soon {
             margin-top: 15px;
             font-size: 0.9rem;
@@ -80,34 +104,34 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">✈️</div>
+    <main class="container" role="main">
+        <div class="logo" aria-hidden="true">✈️</div>
         <h1>Flowplit</h1>
         <p class="tagline">스마트한 여행 플래너</p>
 
-        <div class="features">
+        <section class="features" aria-label="주요 기능">
             <div class="feature">
-                <span class="feature-icon">📅</span>
+                <span class="feature-icon" aria-hidden="true">📅</span>
                 <span class="feature-text">일정 관리</span>
             </div>
             <div class="feature">
-                <span class="feature-icon">💰</span>
+                <span class="feature-icon" aria-hidden="true">💰</span>
                 <span class="feature-text">더치페이</span>
             </div>
             <div class="feature">
-                <span class="feature-icon">🎒</span>
+                <span class="feature-icon" aria-hidden="true">🎒</span>
                 <span class="feature-text">준비물 체크</span>
             </div>
             <div class="feature">
-                <span class="feature-icon">☁️</span>
-                <span class="feature-text">iCloud 동기화</span>
+                <span class="feature-icon" aria-hidden="true">☁️</span>
+                <span class="feature-text">클라우드 동기화</span>
             </div>
-        </div>
+        </section>
 
-        <a href="https://apps.apple.com/app/flowplit/id6740486566" class="app-store-btn">
+        <a href="https://apps.apple.com/app/flowplit/id6740486566" class="app-store-btn" aria-label="App Store에서 Flowplit 다운로드">
             App Store에서 다운로드
         </a>
         <p class="coming-soon">Android 버전 준비 중</p>
-    </div>
+    </main>
 </body>
 </html>
